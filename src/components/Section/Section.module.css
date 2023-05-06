@@ -1,0 +1,8 @@
+.section {
+  width: 100%;
+  padding-top: calc(var(--height-header) + 1rem);
+  padding-bottom: 5%;
+  color: var(--color-light);
+  background-color: inherit;
+  transition: 1s;
+}

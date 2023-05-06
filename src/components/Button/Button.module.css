@@ -1,0 +1,9 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}

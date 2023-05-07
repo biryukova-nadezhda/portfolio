@@ -1,0 +1,23 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: var(--color-dark);
+  text-align: center;
+  background-color: var(--color-accent);
+  border-radius: 20px;
+  transition: 1s;
+}
+
+@media (min-width: 766px) {
+  .popup {
+    width: 50%;
+    font-size: 1.25rem;
+  }
+}

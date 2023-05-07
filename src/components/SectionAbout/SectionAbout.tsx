@@ -3,7 +3,6 @@ import style from './SectionAbout.module.css';
 import { Section } from '../Section/Section';
 import { Container } from '../Container/Container';
 import photo from '../../assets/img/about.jpg';
-import { ReactComponent as IconResume } from '../../assets/img/icon/icon_download.svg';
 
 export const SectionAbout: React.FC = () => {
   return (
@@ -26,7 +25,6 @@ export const SectionAbout: React.FC = () => {
           />
 
           <a href="/doc/Birukova_Nadzeya_ru.pdf" target="_blanck" title="Ссылка на резюме Бирюковой Надежды" className={ style.btn } >
-            <IconResume />
             Резюме
           </a>
         </div>

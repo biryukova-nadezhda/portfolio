@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export type Validations = {
   isEmpty?: boolean;
@@ -25,6 +25,7 @@ export const useValidation = (value: string, validations: Validations) => {
 
   useEffect(() => {
     const val = value.trim();
+    //eslint-disable-next-line
     const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
 
     for (let validation in validations) {
@@ -45,7 +46,7 @@ export const useValidation = (value: string, validations: Validations) => {
           break;
       }
     }
-  }, [value]);
+  }, [value, validations]);
 
   useEffect(() => {
     if (isEmpty || minLength || maxLength || email) {

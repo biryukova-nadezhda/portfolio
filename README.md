@@ -14,5 +14,3 @@
 - Vercel
 
 Реализацию можно посмотреть на [сайте](https://main--peaceful-banoffee-591107.netlify.app/).
-
-Дата окончания проекта: .

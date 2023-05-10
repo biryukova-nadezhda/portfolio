@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import style from './Navigation.module.css';
 
-export const Navigation: React.FC = () => {
-  const [active, setActive] = useState(false);
+interface NavigationProps {
+  active: boolean;
+  setActive: (active: boolean) => void;
+};
 
+export const Navigation: React.FC<NavigationProps> = ({ active, setActive }) => {
   return (
     <nav className={ style.navigation }>
       <ul className={ classNames(style.list, active ? style.list_active : '') } onClick={() => setActive(false)}>

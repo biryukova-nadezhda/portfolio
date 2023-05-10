@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   width: 100%;
   max-width: 500px;
   padding: 2rem 4%;
@@ -23,9 +23,14 @@
 .title {
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  opacity: 0.7;
 }
 
 .wrapper_field {
+  width: 100%;
+}
+
+.block_input {
   position: relative;
   width: 100%;
 }
@@ -42,7 +47,7 @@
   background-color: transparent;
   border-radius: 15px;
   box-shadow: 15px 15px 21px #151518, -7px -10px 15px #1f1f22;
-  transition: border-color 0.15s ease-in-out
+  transition: border-color 0.15s ease-in-out;
 }
 
 .field::-webkit-input-placeholder {
@@ -74,6 +79,10 @@
   transform: translateY(-15px);
 }
 
+.field:not(:placeholder-shown):hover~.label {
+  transform: translateY(-15px) scale(0.85);
+}
+
 .field:focus~.label,
 .field:not(:placeholder-shown)~.label {
   top: 0;
@@ -83,13 +92,18 @@
   border-radius: 12px;
 }
 
-.field_error {
-  box-shadow: 6px 6px 15px #0a0101, -8px -7px 15px #7d6833c3;
+.errorMessage {
+  display: block;
+  margin: 0.75rem 0 0 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--color-accent);
+  opacity: 0.7;
 }
 
 textarea.field {
   height: 9rem;
-  resize: none
+  resize: none;
 }
 
 textarea.field~.label {
@@ -107,6 +121,7 @@ textarea.field~.label {
   background-color: transparent;
   transition: top 0.1s ease-in-out, scale 0.1s ease-in-out, color 0.1s ease-in-out;
   pointer-events: none;
+  opacity: 0.7;
 }
 
 .btn {

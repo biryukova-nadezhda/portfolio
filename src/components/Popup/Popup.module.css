@@ -10,14 +10,20 @@
   font-size: 1rem;
   color: var(--color-dark);
   text-align: center;
-  background-color: var(--color-accent);
+  background-color: rgba(235, 180, 84, 0.8);
   border-radius: 20px;
   transition: 1s;
 }
 
+@media (min-width: 478px) {
+  .popup {
+    width: 80%;
+  }
+}
+
 @media (min-width: 766px) {
   .popup {
-    width: 50%;
+    width: 45%;
     font-size: 1.25rem;
   }
 }

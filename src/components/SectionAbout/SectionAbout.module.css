@@ -1,5 +1,4 @@
 .section {
-  min-height: 100vh;
   padding: calc(var(--height-header) + 1rem) 1rem 2rem;
   display: flex;
   justify-content: center;
@@ -20,6 +19,7 @@
   font-size: 1.25rem;
   line-height: 2;
   text-align: justify;
+  text-indent: 2rem;
   opacity: 0.6;
 }
 
@@ -29,6 +29,15 @@
 
 .block_img {
   position: relative;
+  min-height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 15px 15px 25px #0e0e10, -3px -3px 25px #242427;
+  transition: .6s;
+}
+
+.block_img:hover {
+  transform: scale(1.1);
 }
 
 .img {
@@ -36,7 +45,6 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 20px;
   opacity: 0.6;
 }
 
@@ -50,15 +58,15 @@
   align-items: center;
   gap: 1rem;
   width: 40%;
-  padding: 1rem 5%;
-  color: inherit;
-  border: none;
+  padding: 0.8rem 30%;
   font-size: 1.25rem;
   text-transform: capitalize;
-  cursor: pointer;
-  transition: .5s;
+  color: #7e7d7f;
+  border: none;
   background-color: rgba(26, 26, 29, 0.8);
   border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
 }
 
 .btn:hover {

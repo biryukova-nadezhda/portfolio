@@ -10,9 +10,10 @@ interface ButtonProps {
   onClick?: () => void;
   icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   position?: 'left' | 'right';
+  disabled?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ type, classBtn, text, title, onClick, icon: Icon, position='left'  }) => {
+export const Button: React.FC<ButtonProps> = ({ type, classBtn, text, title, onClick, icon: Icon, position='left', disabled  }) => {
   return (
     <button
       type={ type }
@@ -22,6 +23,7 @@ export const Button: React.FC<ButtonProps> = ({ type, classBtn, text, title, onC
         flexDirection: `${position==='left' ? 'row' : 'row-reverse'}`
       }}
       onClick={ onClick }
+      disabled={ disabled }
     >
       { Icon && <Icon /> }
       { text && text }

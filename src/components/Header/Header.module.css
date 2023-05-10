@@ -8,6 +8,11 @@
   color: var(--color-light);
   background-color: transparent;
   z-index: 100;
+  transition: 0.3s;
+}
+
+.header_active {
+  background-color: rgba(26, 26, 29, 0.85);
 }
 
 .container {

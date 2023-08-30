@@ -11,6 +11,5 @@
 - Module CSS
 - Jest
 - Webpack
-- Vercel
 
-Реализацию можно посмотреть на [сайте](https://main--peaceful-banoffee-591107.netlify.app/).
+Реализацию можно посмотреть [здесь](https://biryukova-nadezhda.vercel.app/) или [здесь](https://main--peaceful-banoffee-591107.netlify.app/).

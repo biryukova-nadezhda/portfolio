@@ -32,7 +32,7 @@
   min-height: 150px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 15px 15px 25px #0e0e10, -3px -3px 25px #242427;
+  box-shadow: 15px 15px 10px #0e0e10, -3px -3px 10px #242427;
   transition: .6s;
 }
 

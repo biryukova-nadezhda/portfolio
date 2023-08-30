@@ -10,7 +10,7 @@
   font-size: 1.2rem;
   color: var(--color-light);
   background-color: var(--color-dark);
-  box-shadow: 15px 15px 25px #151518, -3px -3px 25px #1f1f22;
+  box-shadow: 15px 15px 10px #151518, -3px -3px 10px #1f1f22;
   border-radius: 20px;
   transition: 1s;
 }
@@ -46,7 +46,7 @@
   color: var(--color-light);
   background-color: transparent;
   border-radius: 15px;
-  box-shadow: 15px 15px 21px #151518, -7px -10px 15px #1f1f22;
+  box-shadow: 15px 15px 10px #151518, -7px -10px 10px #1f1f22;
   transition: border-color 0.15s ease-in-out;
 }
 
